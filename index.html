@@ -18,7 +18,7 @@
       <nav id="navBar">
         <ul >
             <li>
-                <button type="button" class="transparent" id="mainbutton" onClick="popUp()">Products</button>
+                <button type="button" class="transparent" id="mainbutton" onClick="popUp(this.id)">Products</button>
             </li>
             <li>
                 Challenges
@@ -35,7 +35,7 @@
         <button class="transparent">Sign in</button>
         <button class="try-it-for-free">Try it for Free</button>
       </div>
-      <button type="button" class="button-dropdown">
+      <button type="button" onClick="popUp(this.id)" id="button-dropdown">
             <img src="../Assets/Menu.svg"/>
       </button>
     </header>
