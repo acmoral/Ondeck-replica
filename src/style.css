@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    
+}
+html{
+    background-color: #f3ebe3;
+    font-family: 'Inter', sans-serif;
+    font-size: 64.5%;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 12.5rem 0rem 12.5rem;
+}
+header #navBar ul{
+    list-style: none;
+    color:#6c6c6c;
+    font-weight: 500;
+    font-size: 14px;
+}
+header #navBar ul li{
+    display:inline;
+    margin:0px 30px 0px 0px;
+}
+header .transparent{
+    background-color: transparent;
+    color:#6c6c6c;
+    font-weight: 500;
+    font-size: medium;
+    border-color: transparent;
+}
+.try-it-for-free{
+    background-color: #133416;
+    color: white;
+    height:4.5rem;
+    width:12.5rem;
+    border-radius: 3px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    margin:5rem 12.5rem 0rem 12.5rem;
+}
+main .hero-image{
+    max-width:400px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+main .info-content h1{
+    font-size: 54px;
+    color: #f6b301;
+    font-weight:bold 300;
+    margin:1vh 0 1vh 0;
+}
+main .info-content p{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size:1.35rem;
+    color:#6c6c6c;
+    width: 49vw;
+    margin:3vh 0 3vh 0;
+}
+footer p{
+    text-align: center;
+    color:#beb9b8;
+    font-size: 10px;
+    font-weight: 400;
+}
+footer .trusted-logos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+footer .trusted-logos .company-logos{
+    margin-left: 30px;
+}
+@media (max-width: 500px){
+    header #navBar ul{display:none;}
+    header .Log-up{ display: none;}
+    header{
+        display:flex;
+        justify-content: space-between;
+        margin:1.5rem 1.5rem 1rem 1.5rem;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        margin:1rem 2rem 2rem 2rem;
+    }
+    main .hero-image{display: none;}
+    main .info-content h1{
+        font-size: 30px;
+        width: 80vw;
+    }
+    main .info-content p{
+        width: 80vw;
+        font-size: 12px;
+        
+    }
+    header .button-dropdown{ 
+        background-color: #f3ebe3;
+        border-color: transparent;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    footer .trusted-logos{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 90vw;
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+    footer .trusted-logos .company-logos{
+        margin-left: 30px;
+        align-content:space-between;
+        width: 110px;
+    }
+}
+@media (min-width:480px){
+    header .button-dropdown{display:none;}
+}
